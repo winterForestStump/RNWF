@@ -28,7 +28,7 @@ jobs:
 
     - name: Execute Notebook
       run: |
-        jupyter nbconvert --execute --to notebook --output code/request_rnwf_output.ipynb code/request_rnwf.ipynb
+        ipython -c "%run code/request_rnwf.ipynb"
       working-directory: ${{ github.workspace }}
 
     - name: Move CSV File to Data Folder
