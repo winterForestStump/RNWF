@@ -19,20 +19,17 @@ jobs:
     - name: Create Data Folder
       run: |
         mkdir -p rnwf_data/$(date +%Y-%m-%d)
-      working-directory: ${{ github.workspace }}
 
     - name: Install Python Dependencies
       run: |
         pip install -r requirements.txt
-      working-directory: ${{ github.workspace }}
 
     - name: Execute Notebook
       run: |
         ipython -c "%run code/request_rnwf.ipynb"
-      working-directory: ${{ github.workspace }}
 
     - name: Move CSV File to Data Folder
       run: |
         mv rnwf_data/rnwf.csv rnwf_data/$(date +%Y-%m-%d)/
-      working-directory: ${{ github.workspace }}
+
 
