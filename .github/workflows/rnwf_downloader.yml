@@ -1,53 +1,38 @@
-# manualy download the RNWWF data 
-# https://github.com/marketplace/actions/run-notebook
 name: rnwf_downloader
 
-# Controls when the action will run.
-on: [workflow_dispatch]
+on:
+  workflow_dispatch:
 
-jobs: 
-  rnwf_downloader:
+jobs:
+  download_data:
     runs-on: ubuntu-latest
 
-    # check out repo, install dependencies
     steps:
-      - uses: actions/checkout@v3
-      - name: Set up Python
-        uses: actions/setup-python@v3
-        with:
-          python-version: '3.11.2' # optional
-          cache: 'pip' # caching pip dependencies
-      - run: pip install -r requirements.txt
+    - name: Check out code
+      uses: actions/checkout@v2
 
-      # make date folder
-      - name: make date directory
-        run: | 
-          mkdir -p rnwf_data/$(date +%Y-%m-%d)
+    - name: Create Data Folder
+      run: |
+        mkdir -p rnwf_data/$(date +%Y-%m-%d)
+      working-directory: ${{ github.workspace }}
 
-      # execute download script
-      - name: download RNWF
-        run: |
-          ipython -c "%run code/request_rnwf.ipynb"
-        continue-on-error: true
-
-      - name: Commit files
-        run: |
-#          git config --local user.name actions-user
-          git add rnwf_data/*
-          git commit -am "Monthly RNWF data $(date)"
-          git push origin main
-  
-  # create a GH issue if previous job fails        
-  create_gh_issue:
-    runs-on: ubuntu-latest
-    if: failure()
-    needs: rnwf_downloader
-    steps:
-    - name: Create GitHub Issue
-      uses: actions/create-issue@v1
+    - name: Install Python
+      uses: actions/setup-python@v2
       with:
-        title: Issue Title
-        labels: bug
-        assignees: winterForestStump
-      env:
-        GITHUB_TOKEN: ${{ github.token }}
+        python-version: 3.11.2
+
+    - name: Install Python Dependencies
+      run: |
+        pip install -r requirements.txt
+      working-directory: ${{ github.workspace }}
+
+    - name: Execute Notebook
+      run: |
+        jupyter nbconvert --execute --to notebook --output code/request_rnwf_output.ipynb code/request_rnwf.ipynb
+      working-directory: ${{ github.workspace }}
+
+    - name: Move CSV File to Data Folder
+      run: |
+        mv code/rhwf.csv rnwf_data/$(date +%Y-%m-%d)/
+      working-directory: ${{ github.workspace }}
+
