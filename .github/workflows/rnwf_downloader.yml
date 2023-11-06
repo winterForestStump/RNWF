@@ -11,20 +11,17 @@ jobs:
     - name: Check out code
       uses: actions/checkout@v2
 
-    - name: Install Python
+    - name: Install python and requirements
       uses: actions/setup-python@v2
       with:
         python-version: 3.11.2
+    - run: pip install -r requirements.txt
 
-    - name: Create Data Folder
+    - name: Create date folder
       run: |
         mkdir -p rnwf_data/$(date +%Y-%m-%d)
 
-    - name: Install Python Dependencies
-      run: |
-        pip install -r requirements.txt
-
-    - name: Execute Notebook
+    - name: Execute notebook
       run: |
         ipython -c "%run code/request_rnwf.ipynb"
 
