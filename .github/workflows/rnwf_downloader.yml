@@ -33,6 +33,6 @@ jobs:
 
     - name: Move CSV File to Data Folder
       run: |
-        mv code/rhwf.csv rnwf_data/$(date +%Y-%m-%d)/
+        mv rhwf.csv rnwf_data/$(date +%Y-%m-%d)/
       working-directory: ${{ github.workspace }}
 
