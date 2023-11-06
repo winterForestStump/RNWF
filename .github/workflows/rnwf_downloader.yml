@@ -1,0 +1,53 @@
+# manualy download the RNWWF data 
+# https://github.com/marketplace/actions/run-notebook
+name: rnwf_downloader
+
+# Controls when the action will run.
+on: [workflow_dispatch]
+
+jobs: 
+  rnwf_downloader:
+    runs-on: ubuntu-latest
+
+    # check out repo, install dependencies
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.11.6' # optional
+          cache: 'pip' # caching pip dependencies
+      - run: pip install -r requirements.txt
+
+      # make date folder
+      - name: make date directory
+        run: | 
+          mkdir -p rnwf_data/$(date +%Y-%m-%d)
+
+      # execute download script
+      - name: download RNWF
+        run: |
+          ipython -c "%run code/request_rnwf.ipynb"
+        continue-on-error: true
+
+      - name: Commit files
+        run: |
+          git config --local user.name actions-user
+          git add rnwf_data/*
+          git commit -am "Monthly RNWF data $(date)"
+          git push origin main
+  
+  # create a GH issue if previous job fails        
+  create_gh_issue:
+    runs-on: ubuntu-latest
+    if: failure()
+    needs: rnwf_downloader
+    steps:
+    - uses: actions/checkout@v3
+    - uses: JasonEtco/create-an-issue@v2.9.1
+      env:
+        GITHUB_TOKEN: ${{ github.token }}
+      with:
+        filename: .github/issue_template.md
+        update_existing: true
+        search_existing: open
