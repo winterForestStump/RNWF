@@ -43,11 +43,11 @@ jobs:
     if: failure()
     needs: rnwf_downloader
     steps:
-    - uses: actions/checkout@v3
-    - uses: JasonEtco/create-an-issue@v2.9.1
+    - name: Create GitHub Issue
+      uses: actions/create-issue@v1
+      with:
+        title: Issue Title
+        labels: bug
+        assignees: winterForestStump
       env:
         GITHUB_TOKEN: ${{ github.token }}
-      with:
-        filename: .github/issue_template.md
-        update_existing: true
-        search_existing: open
