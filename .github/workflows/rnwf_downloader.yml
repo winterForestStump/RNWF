@@ -32,4 +32,10 @@ jobs:
       run: |
         mv rnwf_data/rnwf.csv rnwf_data/$(date +%Y-%m-%d)/
 
+    - name: Commit files
+      run: |
+          git add rnwf_data/*
+          git commit -am "RNWF data Update $(date)"
+          git push origin main
+
 
