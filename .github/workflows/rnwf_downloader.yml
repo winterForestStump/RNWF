@@ -11,11 +11,6 @@ jobs:
     - name: Check out code
       uses: actions/checkout@v2
 
-    - name: Create Data Folder
-      run: |
-        mkdir -p rnwf_data/$(date +%Y-%m-%d)
-      working-directory: ${{ github.workspace }}
-
     - name: Install Python
       uses: actions/setup-python@v2
       with:
@@ -29,6 +24,11 @@ jobs:
     - name: Execute Notebook
       run: |
         ipython -c "%run code/request_rnwf.ipynb"
+      working-directory: ${{ github.workspace }}
+
+    - name: Create Data Folder
+      run: |
+        mkdir -p rnwf_data/$(date +%Y-%m-%d)
       working-directory: ${{ github.workspace }}
 
     - name: Move CSV File to Data Folder
