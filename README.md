@@ -10,13 +10,19 @@ Management of NWF assets is executed by the Ministry of Finance of the Russian F
 As for the November 11, 2023:
 
 Fund amount in RUB, mln:
-(data/Fund amount in RUB.png)
+<img src="https://github.com/winterForestStump/RNWF/blob/9012c479ef5f4a43a43446b3e85b0ed37a182dab/data/Fund%20amount%20in%20RUB.png" align="left" />
+
+
 
 Fund amount in USD, mln:
-(data/Fund amount in USD.png)
+<img src="https://github.com/winterForestStump/RNWF/blob/9012c479ef5f4a43a43446b3e85b0ed37a182dab/data/Fund%20amount%20in%20USD.png" align="left" />
+
+
 
 Liquid part of the fund:
-(data/Liquid share in USD.png)
+<img src="https://github.com/winterForestStump/RNWF/blob/9012c479ef5f4a43a43446b3e85b0ed37a182dab/data/Liquid%20share%20in%20USD.png" align="left" />
+
+
 
 
 FF: Automatic file downloading has an obstacle - different file names for different periods:
