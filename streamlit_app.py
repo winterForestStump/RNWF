@@ -9,9 +9,8 @@ Here's our attempt to visualise the size, structure and dynamic of the fund
 
 st.write("The volume of the Fund")
 df = pd.read_csv('https://raw.githubusercontent.com/winterForestStump/RNWF/main/data/rnwf.csv')
-df[['Date', 'amount_blnUSD', 'amount_blnRUB']].head(5)
-string = f"By {df['Date'][0]} the amount of the RNWF was USD {df['amount_blnUSD'][0]} bln or RUB {df['amount_blnRUB'][0]} bln"
-st.write("string")
+st.dataframe(df[['Date', 'amount_blnUSD', 'amount_blnRUB']].head(1))
+st.write(f"By {df['Date'][0]} the amount of the RNWF was USD {df['amount_blnUSD'][0]} bln or RUB {df['amount_blnRUB'][0]} bln")
 
 
 st.write("Fund amount in USD")
