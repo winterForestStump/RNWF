@@ -9,12 +9,12 @@ Management of NWF assets is executed by the Ministry of Finance of the Russian F
 
 As for the December 25, 2023:
 
-![Fund amount in RUB, mln:](data/plots/Fund amount in RUB.png)
+![Fund amount in RUB, mln:](data/plots/Fund_amount_in_RUB.png)
 
 
 
-![Fund amount in USD, mln:](data/plots/Fund amount in USD.png)
+![Fund amount in USD, mln:](data/plots/Fund_amount_in_USD.png)
 
 
 
-![Volume of liquid assets of the Fund, USD mln:](data/plots/Volume of liquid assets of the Fund, USD mln.png)
+![Volume of liquid assets of the Fund, USD mln:](data/plots/Volume_of_liquid_assets_of_the_Fund_in_USD.png)
