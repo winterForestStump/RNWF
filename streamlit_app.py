@@ -21,7 +21,8 @@ line = alt.Chart(df).mark_line(point=True).encode(
     y=alt.Y('amount_blnUSD:Q'), 
     tooltip = ["Date(m,Y):T", 'amount_blnUSD:Q'])
 rule = alt.Chart(pd.DataFrame({'datetime_invasion': [datetime_invasion]})).mark_rule(color='red').encode(x='datetime_invasion:T')
-(line + rule).properties(title='Fund amount in USD', width=1000)
+combined_chart_ = alt.layer(line, rule).properties(title='Fund amount in USD', width=1000)
+combined_chart_
 
 
 st.write("Fund amount in RUB")
@@ -30,7 +31,8 @@ line_1 = alt.Chart(df).mark_line(point=True).encode(
     y=alt.Y('amount_blnRUB:Q'),
     tooltip = ["Date(m,Y):T", 'amount_blnRUB:Q'])
 rule_1 = alt.Chart(pd.DataFrame({'datetime_invasion': [datetime_invasion]})).mark_rule(color='red').encode(x='datetime_invasion:T')
-(line_1 + rule_1).properties(title='Fund amount in RUB', width=1000)
+combined_chart_1 = alt.layer(line_1, rule_1).properties(title='Fund amount in RUB', width=1000)
+combined_chart_1
 
 
 st.write("Structure of the Fund")
