@@ -1,24 +1,7 @@
-# Russian National Wealth Fund 
+# Repo for the National Welfare Fund (NWF) data. 
 
-Repo for the National Welfare Fund (NWF) data
+Data on the size, structure and dynamics of the fund are provided from Minfin in text format on a monthly basis. Despite the significant volume of the fund, these data are poorly structured, there is no consistency in the format of these public reports, which makes it more difficult to structure and analyze them. The main purpose of the repository is to structure the data and and present it in a more convenient way.
 
-The NWF is part of the federal budget funds subject to separate accounting and management in order to ensure co-financing of voluntary pension savings of Russian Federation citizens, as well as to balance (cover the deficit of) the federal budget and the budget of the Pension Fund of the Russian Federation.
+The NWF is the part of the federal budget funds subject to separate accounting and management. Management of NWF assets is executed by the Ministry of Finance of the Russian Federation in accordance with procedure and terms established by the Government of the Russian Federation. The National Wealth Fund assets can only be spent to co-finance voluntary pension savings of Russian citizens and to balance budget of Pension Fund of the Russian Federation.
 
-
-Management of NWF assets is executed by the Ministry of Finance of the Russian Federation in accordance with procedure and terms established by the Government of the Russian Federation. Bank of Russia may act as operational manager. The National Wealth Fund assets can only be spent to co-finance voluntary pension savings of Russian citizens and to balance budget of Pension Fund of the Russian Federation.
-
-
-All plots are available on [russiannationalwelfarefund.streamlit.app](https://russiannationalwelfarefund.streamlit.app/)
-
-
-As for the December 25, 2023:
-
-![Fund amount in RUB, mln:](data/plots/Fund_amount_in_RUB.png)
-
-
-
-![Fund amount in USD, mln:](data/plots/Fund_amount_in_USD.png)
-
-
-
-![Volume of liquid assets of the Fund, USD mln:](data/plots/Volume_of_liquid_assets_of_the_Fund_in_USD.png)
+All tables and plots are available on [russiannationalwelfarefund.streamlit.app](https://russiannationalwelfarefund.streamlit.app/)
