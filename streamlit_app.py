@@ -120,3 +120,11 @@ chart_11
 st.write("Bonds, RUB mln")
 chart_12 = plot_line("Bonds, RUB mln")
 chart_12
+
+st.write("Structure of the fund")
+structure = pd.read_csv("https://raw.githubusercontent.com/winterForestStump/RNWF/main/data/structure.csv", header=None, sep=';')
+structure = structure.T
+structure.rename(columns=structure.iloc[0], inplace=True)
+structure = structure[1:] # drop the first row, as it is now the header
+structure['Data'] = pd.to_datetime(structure['Data'], format='%d.%m.%Y', errors='coerce') #for not silent fail
+st.dataframe(df_structure)
