@@ -121,10 +121,29 @@ st.write("Bonds, RUB mln")
 chart_12 = plot_line("Bonds, RUB mln")
 chart_12
 
+
 st.write("Structure of the fund")
 structure = pd.read_csv("https://raw.githubusercontent.com/winterForestStump/RNWF/main/data/structure.csv", header=None, sep=';')
 structure = structure.T
 structure.rename(columns=structure.iloc[0], inplace=True)
 structure = structure[1:] # drop the first row, as it is now the header
 structure['Data'] = pd.to_datetime(structure['Data'], format='%d.%m.%Y', errors='coerce') #for not silent fail
-st.dataframe(df_structure)
+structure = structure.drop(columns=['CBR exchange rate for USD','Volume of the National Wealth Fund, RUB mln'])
+#st.dataframe(structure)
+structure = structure.melt(id_vars=['Data'], value_vars=['Deposits and subordinated debt with VEB_RF',
+                                                         'Debt obligations of foreign countries',
+                                                         'Securities related to the implementation of infrastructure projects',
+                                                         'Preferred shares and subordinated debt of credit organizations',
+                                                         'Common stocks',
+                                                         'Preferred shares',
+                                                         'Bonds',
+                                                         'Liquid assets of the Fund'])
+#st.dataframe(structure)
+
+bars = alt.Chart(structure).mark_bar(height=13).encode(
+    x=alt.X('sum(value):Q').stack('normalize'),
+    y=alt.Y('Data:T'),
+    color=alt.Color('variable')
+)
+structure_chart = alt.layer(bars).properties(title='Structure of the fund', width=1000)
+structure_chart
