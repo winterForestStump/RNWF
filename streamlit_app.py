@@ -156,5 +156,5 @@ recepients
 base = alt.Chart(recepients).encode(
     alt.Theta('RUB, mln:Q').stack(True),
     alt.Color('Entity:N').legend()
-).mark_arc(outerRadius=120)
+).mark_arc(outerRadius=120).properties(title='The main recepients of the Fund', width=1000)
 base
