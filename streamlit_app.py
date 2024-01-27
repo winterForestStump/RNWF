@@ -147,3 +147,14 @@ bars = alt.Chart(structure).mark_bar(height=13).encode(
 )
 structure_chart = alt.layer(bars).properties(title='Structure of the fund', width=1000)
 structure_chart
+
+
+st.write("The main recepients of the Fund")
+recepients = pd.read_csv('https://raw.githubusercontent.com/winterForestStump/RNWF/main/data/recepients.csv', header=0, sep=';')
+recepients
+
+base = alt.Chart(recepients).encode(
+    alt.Theta('RUB, mln:Q').stack(True),
+    alt.Color('Entity:N').legend()
+).mark_arc(outerRadius=120)
+base
