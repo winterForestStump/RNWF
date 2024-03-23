@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 import altair as alt
 
+st.set_page_config(layout="wide")
+
 """
 # This is a National Welfare Fund of the Russian Federation app
 Here's our attempt to visualise the size, structure and dynamic of the fund
