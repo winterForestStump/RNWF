@@ -158,3 +158,6 @@ base = alt.Chart(recepients).encode(
     alt.Color('Entity:N').legend()
 ).mark_arc(outerRadius=120).properties(title='The main recepients of the Fund', width=1000)
 base
+
+
+# More info about Sberbank selling deal between Minfin and CBR - https://w.wiki/8zUd (in Russian). 
