@@ -4,7 +4,7 @@ Data on the size, structure and dynamics of the fund are provided from Minfin in
 
 The NWF is the part of the federal budget funds subject to separate accounting and management. Management of NWF assets is executed by the Ministry of Finance of the Russian Federation in accordance with procedure and terms established by the Government of the Russian Federation. The National Wealth Fund assets can only be spent to co-finance voluntary pension savings of Russian citizens and to balance budget of Pension Fund of the Russian Federation.
 
-## Data as of March 1, 2024
+## Data as of May 1, 2024
 
 ## All tables and plots are available on [russiannationalwelfarefund.streamlit.app](https://russiannationalwelfarefund.streamlit.app/)
 
