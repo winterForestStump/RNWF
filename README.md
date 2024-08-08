@@ -8,3 +8,8 @@ The basic regulatory document of the RNWF is [Decree #18 from January 19, 2008](
 Since May-June 2024, access to the data of the website of the MinFin became restricted from abroad, access is possible only through VPN (server address - Russia).
 
 ## All tables and plots are available on [russiannationalwelfarefund.streamlit.app](https://russiannationalwelfarefund.streamlit.app/)
+
+On August 1, 2024 other Russian issuers received:
+- 16 000 mln RUB and
+- 3 000 mln CNY
+The exact company names are unknown 
