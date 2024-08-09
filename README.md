@@ -13,3 +13,6 @@ On August 1, 2024 other Russian issuers received:
 - 16 000 mln RUB and
 - 3 000 mln CNY
 The exact company names are unknown 
+
+## Additional information
+- The USD 1875.4 mln amount in securities of Russian issuers related to the implementation of self-sustaining infrastructure projects with high probability is the **Yamal-LNG** project debt. There were two issues of bonds, which were purchased by the MinFin by closed subscription. Reports on the results of the issue could be found [here](https://disclosure.1prime.ru/portal/default.aspx?emId=7709602713).
