@@ -16,11 +16,10 @@ The purpose of the budget rule is to reduce the dependence of the Russian state 
 A law to raise the threshold for investment of the fund from 7% to 10% of GDP was written in November 2021, taking into account the likelihood of an energy transition and the uncertainty of future fossil resource consumption. Most investments from the NWF could not be made until its liquid part reached 7% of GDP. As an exception, investments in government securities and shares of Russian companies that are not related to the financing of self-sustaining infrastructure projects. After the level of the fund reaches 7% of GDP, but is not yet close to 10%, these funds can be invested in units of investment funds managed by RDIF (УК «РФПИ») and self-sustaining infrastructure projects in the total amount up to 2.5 trillion rubles, as well as infrastructure projects by decision of the president or the government. All other assets can be invested in only after the liquid part of the NWF exceeds 10%. 
 In February 2023, the State Duma removed the thresholds of 7% and 10% for the liquid assets of the fund. Now, after the abolition of the thresholds, the fund's liquid assets can be invested in any assets even if the liquidity ratio is low and the share . 
 
+## Additional information
+- The USD 1875.4 mln amount in securities of Russian issuers related to the implementation of self-sustaining infrastructure projects with high probability is the **Yamal-LNG** project debt. There were two issues of bonds, which were purchased by the MinFin by closed subscription. Reports on the results of the issue could be found [here](https://disclosure.1prime.ru/portal/default.aspx?emId=7709602713). 
 
 On August 1, 2024 other Russian issuers received:
 - 16 000 mln RUB and
 - 3 000 mln CNY
 The exact company names are unknown 
-
-## Additional information
-- The USD 1875.4 mln amount in securities of Russian issuers related to the implementation of self-sustaining infrastructure projects with high probability is the **Yamal-LNG** project debt. There were two issues of bonds, which were purchased by the MinFin by closed subscription. Reports on the results of the issue could be found [here](https://disclosure.1prime.ru/portal/default.aspx?emId=7709602713). 
