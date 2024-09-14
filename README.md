@@ -4,7 +4,7 @@ The size, structure and data on the dynamics of the fund are provided from the M
 
 The basic regulatory document of the RNWF is [Decree #18 from January 19, 2008](https://www.consultant.ru/document/cons_doc_LAW_74298/92d969e26a4326c5d02fa79b8f9cf4994ee5633b/) of the Government of Russian Federation 'On the Procedure for managing funds of the National Wealth Fund' and '[Requirements to financial assets](https://www.consultant.ru/document/cons_doc_LAW_74298/7bc757f5e7b23b669abc3e59d4b3a56e9a7307ba/) in which resources of the NWF can be placed.
 
-## Data as of August 1, 2024
+## Data as of September 1, 2024
 Since May-June 2024, access to the data of the website of the MinFin became restricted from abroad, access is possible only through VPN (server address - Russia).
 
 ## All tables and plots are available on [russiannationalwelfarefund.streamlit.app](https://russiannationalwelfarefund.streamlit.app/)
@@ -19,7 +19,7 @@ In February 2023, the State Duma removed the thresholds of 7% and 10% for the li
 ## Additional information
 - The USD 1875.4 mln amount in securities of Russian issuers related to the implementation of self-sustaining infrastructure projects with high probability is the **Yamal-LNG** project debt. There were two issues of bonds, which were purchased by the MinFin by closed subscription. Reports on the results of the issue could be found [here](https://disclosure.1prime.ru/portal/default.aspx?emId=7709602713). 
 
-On August 1, 2024 other Russian issuers received:
-- 16 000 mln RUB and
-- 3 000 mln CNY
+On September 1, 2024 other Russian issuers received:
+- 18 500 mln RUB and
+- 5 750 mln CNY
 The exact company names are unknown 
