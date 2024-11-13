@@ -19,6 +19,4 @@ In February 2023, the State Duma removed the thresholds of 7% and 10% for the li
 ## Additional information
 - The USD 1875.4 mln amount in securities of Russian issuers related to the implementation of self-sustaining infrastructure projects with high probability is the **Yamal-LNG** project debt. There were two issues of bonds, which were purchased by the MinFin by closed subscription. Reports on the results of the issue could be found [here](https://disclosure.1prime.ru/portal/default.aspx?emId=7709602713). 
 
-- As on November 1, 2024 other Russian issuers received:
- - 28 500 mln RUB and
- - 9 000 mln CNY. The exact company names are unknown 
+- As on November 1, 2024 other Russian issuers received: 28 500 mln RUB and 9 000 mln CNY. The exact company names are unknown 
