@@ -131,7 +131,6 @@ structure.rename(columns=structure.iloc[0], inplace=True)
 structure = structure[1:] # drop the first row, as it is now the header
 structure['Data'] = pd.to_datetime(structure['Data'], format='%d.%m.%Y', errors='coerce') #for not silent fail
 structure = structure.drop(columns=['CBR exchange rate for USD','Volume of the National Wealth Fund, RUB mln'])
-#st.dataframe(structure)
 structure = structure.melt(id_vars=['Data'], value_vars=['Deposits and subordinated debt with VEB_RF',
                                                          'Debt obligations of foreign countries',
                                                          'Securities related to the implementation of infrastructure projects',
@@ -140,7 +139,7 @@ structure = structure.melt(id_vars=['Data'], value_vars=['Deposits and subordina
                                                          'Preferred shares',
                                                          'Bonds',
                                                          'Liquid assets of the Fund'])
-#st.dataframe(structure)
+
 
 bars = alt.Chart(structure).mark_bar(height=13).encode(
     x=alt.X('sum(value):Q').stack('normalize'),
@@ -160,6 +159,4 @@ base = alt.Chart(recepients).encode(
     alt.Color('Entity:N').legend()
 ).mark_arc(outerRadius=120).properties(title='The main recepients of the Fund', width=1000)
 base
-
-
-# More info about Sberbank selling deal between Minfin and CBR - https://w.wiki/8zUd (in Russian). 
+ 
