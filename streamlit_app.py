@@ -2,6 +2,37 @@ import streamlit as st
 import pandas as pd
 import altair as alt
 
+GA_TRACKING_ID = 'G-MQC7CE9NJQ'
+GA_JS = '''
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MQC7CE9NJQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MQC7CE9NJQ');
+</script>
+'''
+
+# Function to inject the script into the Streamlit app
+def inject_ga():
+    st.markdown(
+        f"""
+        <head>
+        {GA_JS}
+        </head>
+        """,
+        unsafe_allow_html=True,
+    )
+
+# Call the function to add Google Analytics
+inject_ga()
+
+# Streamlit content
+st.title("My Streamlit App with Google Analytics")
+st.write("This app is now being tracked by Google Analytics!")
+
 st.set_page_config(layout="wide")
 
 """
