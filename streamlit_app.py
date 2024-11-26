@@ -1,64 +1,50 @@
 import streamlit as st
+import streamlit.components.v1 as components
 import pandas as pd
 import altair as alt
+import os
+from dotenv import load_dotenv
+load_dotenv()
+id = os.getenv("GA_TRACKING_ID")
 
 st.set_page_config(layout="wide")
 
-GA_TRACKING_ID = 'G-MQC7CE9NJQ'
-HTML_CODE = f"""
-<!-- Cookie Consent -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
-<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
-<script>
-    window.addEventListener("load", function() {{
-        window.cookieconsent.initialise({{
-            "palette": {{
-                "popup": {{
-                    "background": "#000"
-                }},
-                "button": {{
-                    "background": "#f1d600"
-                }}
-            }},
-            "theme": "classic",
-            "content": {{
-                "message": "This website uses cookies to ensure you get the best experience.",
-                "dismiss": "Got it!",
-                "link": "Learn more",
-                "href": "https://www.google.com/policies/privacy/"  // Update to your privacy policy
-            }},
-            "onInitialise": function (status) {{
-                var type = this.options.type;
-                var didConsent = this.hasConsented();
-                if (didConsent) {{
-                    // User has consented
-                    gtag('config', '{GA_TRACKING_ID}');
-                }}
-            }}
-        }});
-    }});
+# Add your custom HTML (e.g., for a cookie consent banner)
+components.html(
+    """
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>Streamlit App</title>
+        <script>
+            console.log("Custom script loaded!");
+        </script>
+    </head>
+    <body>
+        <div id="cookie-banner">
+            <p>We use cookies to enhance your experience.</p>
+            <button>Accept</button>
+        </div>
+    </body>
+    </html>
+    """,
+    height=200,
+)
 
-    // Google Analytics
-    function gtag(){{
-        dataLayer.push(arguments);
-    }}
-    window.dataLayer = window.dataLayer || [];
-    gtag('js', new Date());
-</script>
-"""
+components.html(
+    """
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={id}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-def inject_html():
-    st.markdown(
-        f"""
-        <head>
-        {HTML_CODE}
-        </head>
-        """,
-        unsafe_allow_html=True,
-    )
-
-# Call the function to inject HTML
-inject_html()
+      gtag('config', '{id}');
+    </script>
+    """,
+    height=0,  # No need for any visual height
+)
 
 # Streamlit content
 st.write("This app now includes a cookie consent banner!")
