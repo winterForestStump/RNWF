@@ -3,35 +3,63 @@ import pandas as pd
 import altair as alt
 
 GA_TRACKING_ID = 'G-MQC7CE9NJQ'
-GA_JS = '''
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MQC7CE9NJQ"></script>
+HTML_CODE = f"""
+<!-- Cookie Consent -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.addEventListener("load", function() {{
+        window.cookieconsent.initialise({{
+            "palette": {{
+                "popup": {{
+                    "background": "#000"
+                }},
+                "button": {{
+                    "background": "#f1d600"
+                }}
+            }},
+            "theme": "classic",
+            "content": {{
+                "message": "This website uses cookies to ensure you get the best experience.",
+                "dismiss": "Got it!",
+                "link": "Learn more",
+                "href": "https://www.google.com/policies/privacy/"  // Update to your privacy policy
+            }},
+            "onInitialise": function (status) {{
+                var type = this.options.type;
+                var didConsent = this.hasConsented();
+                if (didConsent) {{
+                    // User has consented
+                    gtag('config', '{GA_TRACKING_ID}');
+                }}
+            }}
+        }});
+    }});
 
-  gtag('config', 'G-MQC7CE9NJQ');
+    // Google Analytics
+    function gtag(){{
+        dataLayer.push(arguments);
+    }}
+    window.dataLayer = window.dataLayer || [];
+    gtag('js', new Date());
 </script>
-'''
+"""
 
-# Function to inject the script into the Streamlit app
-def inject_ga():
+def inject_html():
     st.markdown(
         f"""
         <head>
-        {GA_JS}
+        {HTML_CODE}
         </head>
         """,
         unsafe_allow_html=True,
     )
 
-# Call the function to add Google Analytics
-inject_ga()
+# Call the function to inject HTML
+inject_html()
 
 # Streamlit content
-st.title("My Streamlit App with Google Analytics")
-st.write("This app is now being tracked by Google Analytics!")
+st.write("This app now includes a cookie consent banner!")
 
 st.set_page_config(layout="wide")
 
