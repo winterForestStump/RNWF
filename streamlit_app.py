@@ -34,13 +34,13 @@ components.html(
 components.html(
     """
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id={id}"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MQC7CE9NJQ"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', '{id}');
+      gtag('config', 'G-MQC7CE9NJQ');
     </script>
     """,
     height=0,  # No need for any visual height
