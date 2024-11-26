@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 import altair as alt
 
+st.set_page_config(layout="wide")
+
 GA_TRACKING_ID = 'G-MQC7CE9NJQ'
 HTML_CODE = f"""
 <!-- Cookie Consent -->
@@ -61,7 +63,6 @@ inject_html()
 # Streamlit content
 st.write("This app now includes a cookie consent banner!")
 
-st.set_page_config(layout="wide")
 
 """
 # This is a National Welfare Fund of the Russian Federation app
