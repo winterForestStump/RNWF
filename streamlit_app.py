@@ -1,54 +1,8 @@
 import streamlit as st
-import streamlit.components.v1 as components
 import pandas as pd
 import altair as alt
-import os
-from dotenv import load_dotenv
-load_dotenv()
-id = os.getenv("GA_TRACKING_ID")
 
 st.set_page_config(layout="wide")
-
-# Add your custom HTML (e.g., for a cookie consent banner)
-components.html(
-    """
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <title>Streamlit App</title>
-        <script>
-            console.log("Custom script loaded!");
-        </script>
-    </head>
-    <body>
-        <div id="cookie-banner">
-            <p>We use cookies to enhance your experience.</p>
-            <button>Accept</button>
-        </div>
-    </body>
-    </html>
-    """,
-    height=200,
-)
-
-components.html(
-    """
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MQC7CE9NJQ"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-MQC7CE9NJQ');
-    </script>
-    """,
-    height=0,  # No need for any visual height
-)
-
-# Streamlit content
-st.write("This app now includes a cookie consent banner!")
-
 
 """
 # This is a National Welfare Fund of the Russian Federation app
