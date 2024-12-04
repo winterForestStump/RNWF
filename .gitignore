@@ -8,5 +8,9 @@ RNWF_structure.xlsx
 RNWF_structure_new.xlsx
 /cbr_decissions/dataset_hf/ver1
 /cbr_decissions/dataset_hf/ver2
-/cbr_decissions
 /jupiter_notebooks
+/cbr_decissions/analyzer.ipynb
+/cbr_decissions/Basic_Semantic_Search.ipynb
+/cbr_decissions/mlruns
+/cbr_decissions/test.ann
+/cbr_decissions/.env
