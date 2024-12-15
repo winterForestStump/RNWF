@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import altair as alt
+import requests
 
 st.set_page_config(layout="wide")
 
@@ -14,10 +15,8 @@ df = pd.read_csv('https://raw.githubusercontent.com/winterForestStump/RNWF/main/
 # Visualization only Total volumes in RUB and USD, liquid volume in RUB and USD, and share. Dates: the last, previous month, previous year
 df_filtered = pd.read_csv('https://raw.githubusercontent.com/winterForestStump/RNWF/main/data/filtered_report.csv')
 st.dataframe(df_filtered)
-with open('https://raw.githubusercontent.com/winterForestStump/RNWF/refs/heads/main/data/report.txt', 'r') as file:
-    # Read the entire content of the file
-    content = file.read()
-st.write(content)
+report = requests.get('https://raw.githubusercontent.com/winterForestStump/RNWF/refs/heads/main/data/report.txt').text
+st.write(report)
 
 
 st.write("Fund amount in USD")
