@@ -10,7 +10,6 @@ st.set_page_config(layout="wide")
 """
 
 "### The volume of the Fund"
-# Visualization only Total volumes in RUB and USD, liquid volume in RUB and USD, and share. Dates: the last, previous month, previous year
 df_filtered = pd.read_csv('https://raw.githubusercontent.com/winterForestStump/RNWF/main/data/report/filtered_report.csv', index_col=0)
 df_filtered
 
