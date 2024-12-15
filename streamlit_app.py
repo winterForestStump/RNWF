@@ -58,23 +58,23 @@ df_structure_filtered = df_structure[filtered_columns_str]
 st.dataframe(df_structure_filtered.iloc[3:-3], use_container_width=True)
 
 # Format the structure to create plots
-df_structure = pd.read_csv('https://raw.githubusercontent.com/winterForestStump/RNWF/main/data/rnwf_structure.csv', header=None, sep=';')
-df_structure = df_structure.T
-df_structure.rename(columns=df_structure.iloc[0], inplace=True)
-df_structure = df_structure[1:] # drop the first row, as it is now the header
-df_structure['Data'] = pd.to_datetime(df_structure['Data'], format='%d.%m.%Y', errors='coerce') #for not silent fail
-df_structure['Share of liquid assets in the total Fund in USD equivalent'] = df_structure['Share of liquid assets in the total Fund in USD equivalent'].str.replace(',', '.').str.rstrip('%').astype('float')
+df_structure_plot = pd.read_csv('https://raw.githubusercontent.com/winterForestStump/RNWF/main/data/rnwf_structure.csv', header=None, sep=';')
+df_structure_plot = df_structure_plot.T
+df_structure_plot.rename(columns=df_structure_plot.iloc[0], inplace=True)
+df_structure_plot = df_structure_plot[1:] # drop the first row, as it is now the header
+df_structure_plot['Data'] = pd.to_datetime(df_structure_plot['Data'], format='%d.%m.%Y', errors='coerce') #for not silent fail
+df_structure_plot['Share of liquid assets in the total Fund in USD equivalent'] = df_structure_plot['Share of liquid assets in the total Fund in USD equivalent'].str.replace(',', '.').str.rstrip('%').astype('float')
 
-line = alt.Chart(df_structure).mark_line(point=True).encode(
+line = alt.Chart(df_structure_plot).mark_line(point=True).encode(
     x=alt.X("Data:T", axis=alt.Axis(title=None, format=("%b %Y"), labelAngle=45)), 
-    y=alt.Y("Volume of liquid assets of the Fund, USD mln:Q"),
+    y=alt.Y("Volume of liquid assets of the Fund, USD mln:Q", axis=alt.Axis(title='Liquid assets'),
     tooltip=["Data:T", 'Volume of liquid assets of the Fund, USD mln:Q'])
-percent = alt.Chart(df_structure).mark_line(color='red').encode(
+percent = alt.Chart(df_structure_plot).mark_line(color='red').encode(
     x=alt.X("Data:T", axis=alt.Axis(title=None, format=("%b %Y"), labelAngle=45)), 
-    y=alt.Y('Share of liquid assets in the total Fund in USD equivalent:Q', axis=alt.Axis(title='Share of liquid assets in the total Fund in USD equivalent'), scale=alt.Scale(domain=[0, 1])),
+    y=alt.Y('Share of liquid assets in the total Fund in USD equivalent:Q', axis=alt.Axis(title='Share of liquid assets in the Fund'), scale=alt.Scale(domain=[0, 1])),
     tooltip=["Data:T", 'Share of liquid assets in the total Fund in USD equivalent:Q'])
-combined_chart = alt.layer(line, percent).resolve_scale(y='independent').properties(title='Volume of liquid assets of the Fund, USD mln', width=1000)
-st.altair_chart(combined_chart, use_container_width=True)
+combined_chart = alt.layer(line, percent).resolve_scale(y='independent')
+st.altair_chart(combined_chart.properties(title='Volume of liquid assets of the Fund, USD mln', width=1000), use_container_width=True)
 
 
 chart_1 = plot_line("Balance on Federal Treasury accounts with the Bank of the Russia, EUR mln")
