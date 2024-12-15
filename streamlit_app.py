@@ -146,10 +146,11 @@ st.altair_chart(structure_chart, use_container_width=True)
 
 
 "### Main recepients of the Fund"
-recepients = pd.read_csv('https://raw.githubusercontent.com/winterForestStump/RNWF/main/data/recepients.csv', header=0, sep=';')
-recepients['Share in total, %'] = round(recepients['RUB, mln'] / sum(recepients['RUB, mln']) * 100, 2)
-st.dataframe(recepients.sort_values(by='RUB, mln', ascending=False, ignore_index=True), use_container_width=True)
+recepients_table = pd.read_csv('https://raw.githubusercontent.com/winterForestStump/RNWF/main/data/recepients.csv', index_col=0, header=0, sep=';')
+recepients_table['Share in total, %'] = recepients_table['RUB, mln'] / sum(recepients_table['RUB, mln']) * 100
+st.dataframe(recepients_table.sort_values(by='RUB, mln', ascending=False, ignore_index=True), use_container_width=True)
 
+recepients = pd.read_csv('https://raw.githubusercontent.com/winterForestStump/RNWF/main/data/recepients.csv', header=0, sep=';')
 base = alt.Chart(recepients).encode(
     alt.Theta('RUB, mln:Q').stack(True),
     alt.Color('Entity:N').legend()
