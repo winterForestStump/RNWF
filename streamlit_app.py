@@ -48,7 +48,7 @@ st.altair_chart(combined_chart_1, use_container_width=True)
 
 "### Fund structure dynamics"
 df_structure = pd.read_csv('https://raw.githubusercontent.com/winterForestStump/RNWF/main/data/rnwf_structure.csv', index_col=0, header=0, sep=';')
-st.dataframe(df_structure, use_container_width=True)
+st.dataframe(df_structure.iloc[3:-3], use_container_width=True)
 
 # Format the structure to create plots
 df_structure = pd.read_csv('https://raw.githubusercontent.com/winterForestStump/RNWF/main/data/rnwf_structure.csv', header=None, sep=';')
@@ -138,6 +138,7 @@ st.altair_chart(structure_chart, use_container_width=True)
 
 "### Main recepients of the Fund"
 recepients = pd.read_csv('https://raw.githubusercontent.com/winterForestStump/RNWF/main/data/recepients.csv', header=0, sep=';')
+recepients['Share in total'] = recepients['RUB, mln'] / 
 st.dataframe(recepients.sort_values(by='RUB, mln', ascending=False, ignore_index=True), use_container_width=True)
 
 base = alt.Chart(recepients).encode(
