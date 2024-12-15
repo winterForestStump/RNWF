@@ -56,7 +56,6 @@ df_structure.rename(columns=df_structure.iloc[0], inplace=True)
 df_structure = df_structure[1:] # drop the first row, as it is now the header
 df_structure['Data'] = pd.to_datetime(df_structure['Data'], format='%d.%m.%Y', errors='coerce') #for not silent fail
 df_structure['Share of liquid assets in the total Fund in USD equivalent'] = df_structure['Share of liquid assets in the total Fund in USD equivalent'].str.replace(',', '.').str.rstrip('%').astype('float')
-st.dataframe(df_structure)
 
 line = alt.Chart(df_structure).mark_line(point=True).encode(
     x=alt.X("Data:T", axis=alt.Axis(title=None, format=("%b %Y"), labelAngle=45)), 
