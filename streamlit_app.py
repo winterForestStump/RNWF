@@ -5,14 +5,6 @@ import requests
 
 st.set_page_config(layout="wide")
 
-def plot_line(text):
-    line = alt.Chart(df_structure).mark_line(point=True).encode(
-    x=alt.X("Data:T", axis=alt.Axis(title=None, format=("%b %Y"), labelAngle=45)), 
-    y=alt.Y(f'{text}:Q', axis=alt.Axis(title=None)),
-    tooltip=["Data:T", f'{text}:Q'])
-    chart = alt.layer(line).properties(title=f'{text}', width=1000)
-    return chart
-
 """
 # Structured information on the Russian National Welfare Fund (RNWF)
 """
@@ -76,6 +68,13 @@ percent = alt.Chart(df_structure_plot).mark_line(color='red').encode(
 combined_chart = alt.layer(line, percent).resolve_scale(y='independent')
 st.altair_chart(combined_chart.properties(title='Volume of liquid assets of the Fund, USD mln', width=1000), use_container_width=True)
 
+def plot_line(text):
+    line = alt.Chart(df_structure_plot).mark_line(point=True).encode(
+    x=alt.X("Data:T", axis=alt.Axis(title=None, format=("%b %Y"), labelAngle=45)), 
+    y=alt.Y(f'{text}:Q', axis=alt.Axis(title=None)),
+    tooltip=["Data:T", f'{text}:Q'])
+    chart = alt.layer(line).properties(title=f'{text}', width=1000)
+    return chart
 
 chart_1 = plot_line("Balance on Federal Treasury accounts with the Bank of the Russia, EUR mln")
 st.altair_chart(chart_1, use_container_width=True)
