@@ -18,7 +18,8 @@ def plot_line(text):
 """
 
 "### The volume of the Fund"
-df_filtered = pd.read_csv('https://raw.githubusercontent.com/winterForestStump/RNWF/main/data/report/filtered_report.csv', index_col=0)
+df_filtered = pd.read_csv('https://raw.githubusercontent.com/winterForestStump/RNWF/main/data/report/filtered_report.csv', index_col=1)
+df_filtered = df_filtered.drop(columns='Unnamed: 0')
 st.dataframe(df_filtered, use_container_width=True)
 
 "### The Report"
@@ -110,7 +111,7 @@ st.altair_chart(chart_13, use_container_width=True)
 
 
 "### Fund structure"
-structure = pd.read_csv("https://raw.githubusercontent.com/winterForestStump/RNWF/main/data/structure.csv", header=None, sep=';')
+structure = pd.read_csv("https://raw.githubusercontent.com/winterForestStump/RNWF/main/data/structure.csv", index_col=0, header=None, sep=';')
 structure = structure.T
 structure.rename(columns=structure.iloc[0], inplace=True)
 structure = structure[1:] # drop the first row, as it is now the header
@@ -127,15 +128,15 @@ structure = structure.melt(id_vars=['Data'], value_vars=['Deposits and subordina
 
 
 bars = alt.Chart(structure).mark_bar(height=13).encode(
-    x=alt.X('sum(value):Q').stack('normalize'),
-    y=alt.Y('Data:T'),
+    x=alt.X('sum(value):Q', axis=alt.Axis(title=None)).stack('normalize'),
+    y=alt.Y('Data:T', axis=alt.Axis(title=None)),
     color=alt.Color('variable')
 )
 structure_chart = alt.layer(bars).properties(title='Structure of the fund', width=1000)
 st.altair_chart(structure_chart, use_container_width=True)
 
 
-"### The main recepients of the Fund"
+"### Main recepients of the Fund"
 recepients = pd.read_csv('https://raw.githubusercontent.com/winterForestStump/RNWF/main/data/recepients.csv', header=0, sep=';')
 st.dataframe(recepients, use_container_width=True)
 
