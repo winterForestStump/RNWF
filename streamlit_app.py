@@ -111,7 +111,7 @@ st.altair_chart(chart_13, use_container_width=True)
 
 
 "### Fund structure"
-structure = pd.read_csv("https://raw.githubusercontent.com/winterForestStump/RNWF/main/data/structure.csv", index_col=0, header=None, sep=';')
+structure = pd.read_csv("https://raw.githubusercontent.com/winterForestStump/RNWF/main/data/structure.csv", header=None, sep=';')
 structure = structure.T
 structure.rename(columns=structure.iloc[0], inplace=True)
 structure = structure[1:] # drop the first row, as it is now the header
