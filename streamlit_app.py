@@ -48,7 +48,14 @@ st.altair_chart(combined_chart_1, use_container_width=True)
 
 "### Fund structure dynamics"
 df_structure = pd.read_csv('https://raw.githubusercontent.com/winterForestStump/RNWF/main/data/rnwf_structure.csv', index_col=0, header=0, sep=';')
-st.dataframe(df_structure.iloc[3:-3], use_container_width=True)
+date_columns = pd.to_datetime(df_structure.columns, format='%d.%m.%Y')
+last_date = date_columns.max() # Find the last available date
+date_last_month = last_date - pd.DateOffset(months=1)
+date_12_months_prior = last_date - pd.DateOffset(months=12) # Find the date 12 months prior
+filtered_columns = [col for col in date_columns if col in [last_date, date_last_month, date_12_months_prior]]
+filtered_columns_str = [col.strftime('%d.%m.%Y') for col in filtered_columns]
+df_structure_filtered = df_structure[filtered_columns_str]
+st.dataframe(df_structure_filtered.iloc[3:-3], use_container_width=True)
 
 # Format the structure to create plots
 df_structure = pd.read_csv('https://raw.githubusercontent.com/winterForestStump/RNWF/main/data/rnwf_structure.csv', header=None, sep=';')
@@ -138,7 +145,7 @@ st.altair_chart(structure_chart, use_container_width=True)
 
 "### Main recepients of the Fund"
 recepients = pd.read_csv('https://raw.githubusercontent.com/winterForestStump/RNWF/main/data/recepients.csv', header=0, sep=';')
-recepients['Share in total'] = recepients['RUB, mln'] / 
+recepients['Share in total, %'] = round(recepients['RUB, mln'] / sum(recepients['RUB, mln']) * 100, 2)
 st.dataframe(recepients.sort_values(by='RUB, mln', ascending=False, ignore_index=True), use_container_width=True)
 
 base = alt.Chart(recepients).encode(
