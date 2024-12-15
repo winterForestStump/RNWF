@@ -45,7 +45,7 @@ rule_1 = alt.Chart(pd.DataFrame({'datetime_invasion': [datetime_invasion]})).mar
 combined_chart_1 = alt.layer(line_1, rule_1).properties(title='Fund amount in RUB', width=1000)
 st.altair_chart(combined_chart_1, use_container_width=True)
 
-"### Fund structure"
+"### Fund structure dynamics"
 df_structure = pd.read_csv('https://raw.githubusercontent.com/winterForestStump/RNWF/main/data/rnwf_structure.csv', index_col=0, header=0, sep=';')
 st.dataframe(df_structure, use_container_width=True)
 
@@ -69,60 +69,47 @@ combined_chart = alt.layer(line, percent).resolve_scale(y='independent').propert
 st.altair_chart(combined_chart, use_container_width=True)
 
 
-st.write("Balance on Federal Treasury accounts with the Bank of the Russia, EUR mln")
 chart_1 = plot_line("Balance on Federal Treasury accounts with the Bank of the Russia, EUR mln")
-chart_1
+st.altair_chart(chart_1, use_container_width=True)
 
-st.write("Balance on Federal Treasury accounts with the Bank of the Russia, CNY mln")
 chart_2 = plot_line("Balance on Federal Treasury accounts with the Bank of the Russia, CNY mln")
-chart_2
+st.altair_chart(chart_2, use_container_width=True)
 
-st.write("Balance on Federal Treasury accounts with the Bank of the Russia, GOLD kg")
 chart_3 = plot_line("Balance on Federal Treasury accounts with the Bank of the Russia, GOLD kg")
-chart_3
+st.altair_chart(chart_3, use_container_width=True)
 
-st.write("Balance on Federal Treasury accounts with the Bank of the Russia, RUB mln")
 chart_4 = plot_line("Balance on Federal Treasury accounts with the Bank of the Russia, RUB mln")
-chart_4
+st.altair_chart(chart_4, use_container_width=True)
 
-st.write("Deposits and subordinated debt with VEB.RF, RUB mln")
 chart_5 = plot_line("Deposits and subordinated debt with VEB_RF, RUB mln")
-chart_5
+st.altair_chart(chart_5, use_container_width=True)
 
-st.write("Debt obligations of foreign countries, USD mln")
-chart_5 = plot_line("Debt obligations of foreign countries, USD mln")
-chart_5
+chart_6 = plot_line("Debt obligations of foreign countries, USD mln")
+st.altair_chart(chart_6, use_container_width=True)
 
-st.write("Securities of Russian issuers related to the implementation of self-sustaining infrastructure projects, RUB mln")
-chart_6 = plot_line("Securities of Russian issuers related to the implementation of self-sustaining infrastructure projects, RUB mln")
-chart_6
+chart_7 = plot_line("Securities of Russian issuers related to the implementation of self-sustaining infrastructure projects, RUB mln")
+st.altair_chart(chart_7, use_container_width=True)
 
-st.write("Securities of Russian issuers related to the implementation of self-sustaining infrastructure projects, USD mln")
-chart_7 = plot_line("Securities of Russian issuers related to the implementation of self-sustaining infrastructure projects, USD mln")
-chart_7
+chart_8 = plot_line("Securities of Russian issuers related to the implementation of self-sustaining infrastructure projects, USD mln")
+st.altair_chart(chart_8, use_container_width=True)
 
-st.write("Preferred shares of credit organizations, RUB mln")
-chart_8 = plot_line("Preferred shares of credit organizations, RUB mln")
-chart_8
+chart_9 = plot_line("Preferred shares of credit organizations, RUB mln")
+st.altair_chart(chart_9, use_container_width=True)
 
-st.write("Subordinated debt with GAZPROMBANK, RUB mln")
-chart_9 = plot_line("Subordinated debt with GAZPROMBANK, RUB mln")
-chart_9
+chart_10 = plot_line("Subordinated debt with GAZPROMBANK, RUB mln")
+st.altair_chart(chart_10, use_container_width=True)
 
-st.write("Common stocks, RUB mln")
-chart_10 = plot_line("Common stocks, RUB mln")
-chart_10
+chart_11 = plot_line("Common stocks, RUB mln")
+st.altair_chart(chart_11, use_container_width=True)
 
-st.write("Preferred shares, RUB mln")
-chart_11 = plot_line("Preferred shares, RUB mln")
-chart_11
+chart_12 = plot_line("Preferred shares, RUB mln")
+st.altair_chart(chart_12, use_container_width=True)
 
-st.write("Bonds, RUB mln")
-chart_12 = plot_line("Bonds, RUB mln")
-chart_12
+chart_13 = plot_line("Bonds, RUB mln")
+st.altair_chart(chart_13, use_container_width=True)
 
 
-st.write("Structure of the fund")
+"### Fund structure"
 structure = pd.read_csv("https://raw.githubusercontent.com/winterForestStump/RNWF/main/data/structure.csv", header=None, sep=';')
 structure = structure.T
 structure.rename(columns=structure.iloc[0], inplace=True)
@@ -148,13 +135,13 @@ structure_chart = alt.layer(bars).properties(title='Structure of the fund', widt
 structure_chart
 
 
-st.write("The main recepients of the Fund")
+"### The main recepients of the Fund"
 recepients = pd.read_csv('https://raw.githubusercontent.com/winterForestStump/RNWF/main/data/recepients.csv', header=0, sep=';')
 recepients
 
 base = alt.Chart(recepients).encode(
     alt.Theta('RUB, mln:Q').stack(True),
     alt.Color('Entity:N').legend()
-).mark_arc(outerRadius=120).properties(title='The main recepients of the Fund', width=1000)
+).mark_arc(outerRadius=120).properties(width=1000)
 base
  
