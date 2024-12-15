@@ -5,11 +5,10 @@ import altair as alt
 st.set_page_config(layout="wide")
 
 """
-# This is a National Welfare Fund of the Russian Federation app
-Here's our attempt to visualise the size, structure and dynamic of the fund
+# Structured information on the Russian National Welfare Fund (RNWF)
 """
 
-st.write("The volume of the Fund")
+"## The volume of the Fund"
 df = pd.read_csv('https://raw.githubusercontent.com/winterForestStump/RNWF/main/data/rnwf.csv')
 st.dataframe(df[['Date', 'amount_blnUSD', 'amount_blnRUB']].head(1))
 st.write(f"By {df['Date'][0]} the amount of the RNWF was USD {df['amount_blnUSD'][0]} bln or RUB {df['amount_blnRUB'][0]} bln")
