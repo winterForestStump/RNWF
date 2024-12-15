@@ -10,6 +10,35 @@ st.set_page_config(layout="wide")
 
 "## The volume of the Fund"
 df = pd.read_csv('https://raw.githubusercontent.com/winterForestStump/RNWF/main/data/rnwf.csv')
+
+# Visualization only Total volumes in RUB and USD, liquid volume in RUB and USD, and share. Dates: the last, previous month, previous year
+df_filtered = pd.read_csv('https://raw.githubusercontent.com/winterForestStump/RNWF/main/data/filtered_report.csv')
+df_str = pd.read_csv('https://raw.githubusercontent.com/winterForestStump/RNWF/main/data/filtered_report.csv')
+non_date_columns = ['Data']
+date_columns = [col for col in df_str.columns if col not in non_date_columns]
+date_columns = pd.to_datetime(date_columns, format='%d.%m.%Y')
+last_date = date_columns.max() # Find the last available date
+date_last_month = last_date - pd.DateOffset(months=1)
+date_12_months_prior = last_date - pd.DateOffset(months=12) # Find the date 12 months prior
+filtered_columns = [col for col in date_columns if col in [last_date, date_last_month, date_12_months_prior]]
+filtered_columns_str = [col.strftime('%d.%m.%Y') for col in filtered_columns]
+df_filtered = df_str[non_date_columns + filtered_columns_str]
+df_filtered = df_filtered[df_filtered['Data'].isin(['Volume of the National Wealth Fund, RUB mln', 
+                                                    'Volume of the National Wealth Fund, USD mln',
+                                                    'Volume of liquid assets of the Fund, RUB mln',
+                                                    'Volume of liquid assets of the Fund, USD mln',
+                                                    'Share of liquid assets in the total Fund in USD equivalent'])]
+df_filtered['Data'] = df_filtered['Data'].replace({
+    'Volume of the National Wealth Fund, RUB mln': 'Total Volume (RUB mln)',
+    'Volume of the National Wealth Fund, USD mln': 'Total Volume (USD mln)',
+    'Volume of liquid assets of the Fund, RUB mln': 'Liquid Volume (RUB mln)',
+    'Volume of liquid assets of the Fund, USD mln': 'Liquid Volume (USD mln)',
+    'Share of liquid assets in the total Fund in USD equivalent': 'Liquid/Total in USD'
+})
+df_filtered.reset_index(drop=True, inplace=True)
+st.dataframe(df_filtered)
+#st.write(f"By {df['Date'][0]} the amount of the RNWF was USD {df['amount_blnUSD'][0]} bln or RUB {df['amount_blnRUB'][0]} bln")
+
 st.dataframe(df[['Date', 'amount_blnUSD', 'amount_blnRUB']].head(1))
 st.write(f"By {df['Date'][0]} the amount of the RNWF was USD {df['amount_blnUSD'][0]} bln or RUB {df['amount_blnRUB'][0]} bln")
 
