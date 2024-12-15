@@ -67,7 +67,7 @@ df_structure_plot['Share of liquid assets in the total Fund in USD equivalent'] 
 
 line = alt.Chart(df_structure_plot).mark_line(point=True).encode(
     x=alt.X("Data:T", axis=alt.Axis(title=None, format=("%b %Y"), labelAngle=45)), 
-    y=alt.Y("Volume of liquid assets of the Fund, USD mln:Q", axis=alt.Axis(title='Liquid assets'),
+    y=alt.Y("Volume of liquid assets of the Fund, USD mln:Q", axis=alt.Axis(title='Liquid assets')),
     tooltip=["Data:T", 'Volume of liquid assets of the Fund, USD mln:Q'])
 percent = alt.Chart(df_structure_plot).mark_line(color='red').encode(
     x=alt.X("Data:T", axis=alt.Axis(title=None, format=("%b %Y"), labelAngle=45)), 
