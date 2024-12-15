@@ -146,7 +146,7 @@ st.altair_chart(structure_chart, use_container_width=True)
 
 
 "### Main recepients of the Fund"
-recepients_table = pd.read_csv('https://raw.githubusercontent.com/winterForestStump/RNWF/main/data/recepients.csv', index_col=0, header=0, sep=';')
+recepients_table = pd.read_csv('https://raw.githubusercontent.com/winterForestStump/RNWF/main/data/recepients.csv', header=0, sep=';')
 recepients_table['Share in total, %'] = recepients_table['RUB, mln'] / sum(recepients_table['RUB, mln']) * 100
 st.dataframe(recepients_table.sort_values(by='RUB, mln', ascending=False, ignore_index=True), use_container_width=True)
 
