@@ -1,0 +1,5 @@
+The financial data shows a mixed performance over the given period. The total volume in RUB has increased by 2.91% from November 2024 to December 2024, but it is still lower than the December 2023 figure by 2.5%. On the other hand, the total volume in USD has decreased both year-over-year and month-over-month, with a significant decline of 19.57% compared to December 2023 and a 7.3% drop from November 2024. 
+
+Liquid volumes have also seen some fluctuations. In RUB, the liquid volume increased by 6.33% from November 2024 to December 2024 but remains 14.15% lower than the previous year. In USD, the liquid volume decreased by 4.22% month-over-month and a notable 29.18% year-over-year. The Liquid/Total ratio in USD has also decreased by 11.95% compared to the previous year, despite a slight increase of 3.32% from November to December 2024. 
+
+This data suggests that while there have been some positive monthly changes, the overall trend indicates a decline in performance from 2023 to 2024, particularly when measured in USD.
