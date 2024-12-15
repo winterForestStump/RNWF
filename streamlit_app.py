@@ -14,7 +14,7 @@ df = pd.read_csv('https://raw.githubusercontent.com/winterForestStump/RNWF/main/
 
 # Visualization only Total volumes in RUB and USD, liquid volume in RUB and USD, and share. Dates: the last, previous month, previous year
 df_filtered = pd.read_csv('https://raw.githubusercontent.com/winterForestStump/RNWF/main/data/report/filtered_report.csv')
-df_filtered = df_filtered.drop(columns='Unnamed:0')
+df_filtered = df_filtered.drop(columns='Unnamed: 0')
 st.dataframe(df_filtered.style.hide(axis="index"))
 report = requests.get('https://raw.githubusercontent.com/winterForestStump/RNWF/refs/heads/main/data/report/report.txt').text
 st.write(report)
