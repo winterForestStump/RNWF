@@ -138,7 +138,7 @@ st.altair_chart(structure_chart, use_container_width=True)
 
 "### Main recepients of the Fund"
 recepients = pd.read_csv('https://raw.githubusercontent.com/winterForestStump/RNWF/main/data/recepients.csv', header=0, sep=';')
-st.dataframe(recepients[['Entity', 'RUB, mln']], use_container_width=True)
+st.dataframe(recepients.sort_values(ascending=False, ignore_index=True), use_container_width=True)
 
 base = alt.Chart(recepients).encode(
     alt.Theta('RUB, mln:Q').stack(True),
