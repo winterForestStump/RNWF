@@ -115,6 +115,9 @@ st.altair_chart(chart_12, use_container_width=True)
 chart_13 = plot_line("Bonds, RUB mln")
 st.altair_chart(chart_13, use_container_width=True)
 
+chart_14 = plot_line("Bonds, CNY mln")
+st.altair_chart(chart_14, use_container_width=True)
+
 
 "### Fund structure"
 structure = pd.read_csv("https://raw.githubusercontent.com/winterForestStump/RNWF/main/data/structure.csv", header=None, sep=';')
