@@ -1,7 +1,8 @@
 ## Scripts for RNWR
 
-Firstly, we have to download WORD file from MinFin website. Since May-June 2024, access to the data of the website of the MinFin became restricted from abroad, access is possible only through VPN (server address - Russia).
-* `rnwf_volume_scraper.py` script reads downloaded WORD file, fetches the table from the file with RNWF volume parameters and saves a table as CSV file. To run the script use the command: 
+Firstly, we have to download an Excel file from the MinFin website. Previously, we used a Word file, but since December 2024, MinFin has been delaying its publication. Since May-June 2024, access to the data of the website of the MinFin became restricted from abroad, access is possible only through VPN (server address - Russia).
+* `excel_reader.py` script reads downloaded EXCEL file, exctractes the RUB and USD amounts for the end of the last date (plus one month). The script reads the excel file from the 'data_excel' folder.
+* Previously used: `rnwf_volume_scraper.py` script reads downloaded WORD file, fetches the table from the file with RNWF volume parameters and saves a table as CSV file. To run the script use the command: 
 `python code\rnwf_volume_scraper.py --file-name "WORD FILE NAME"`, 
 e.g. `python code\rnwf_volume_scraper.py --file-name "Obem_na_01.11.2024.docx"`.
 * `save_csv.py` saves excel sheets to the separate csv files into the 'data' directory.
