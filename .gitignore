@@ -4,9 +4,9 @@
 ch.docx
 RNWF_structure.xlsx
 /data_currencies
+/data_fund_volume
 /.github
 .env
-RNWF_structure_new.xlsx
 /cbr_decissions/dataset_hf/ver1
 /cbr_decissions/dataset_hf/ver2
 /jupiter_notebooks

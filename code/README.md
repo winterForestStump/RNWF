@@ -6,8 +6,10 @@ Firstly, we have to download WORD file from MinFin website. Since May-June 2024,
 e.g. `python code\rnwf_volume_scraper.py --file-name "Obem_na_01.11.2024.docx"`.
 * `save_csv.py` saves excel sheets to the separate csv files into the 'data' directory.
 * `plotting_rnwf.py` saves plots of fund structure dynamics.
+* `report_creater.py` uses 'data/rnwwwf_structure.csv' file to create a smaller dataframe with total and liquid fund info in RUB and USD, and also a share of liquid assets in the fund (which will be used in the streamlit app later). The table data transform into text, and feeded into the Cohere LLM to create a short report. The resulted table and report are saved into the 'data/report' directory.
 
-FF: Automatic word file downloading from MinFin website has two main obstacle: restricted access and different file names patterns for different time periods in the past:
+
+FF: Automatic WORD file downloading from MinFin website has two main obstacle: restricted access and different file names patterns for different time periods in the past:
 - 01.11.2021.docx, 
 - fnb_01.09.2019.docx, 
 - FNB_-_na_01.05.2018.docx, 
