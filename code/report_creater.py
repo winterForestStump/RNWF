@@ -52,7 +52,7 @@ def main():
                                 messages=[{"role": "system", "content": system_message},
                                             {"role": "user", "content": final_text,},
                                         ],
-                                temperature = 0.3,
+                                temperature = 0.2,
                                 )
 
     report = response.message.content[0].text.split('\n')

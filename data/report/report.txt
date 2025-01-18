@@ -1,5 +1,7 @@
-In December 2024, the total volume in RUB reached 13,096,719.1 million, reflecting a 2.91% increase from the previous month and a slight decrease of 2.5% compared to December 2023. However, when measured in USD, the total volume experienced a more significant decline, dropping by 19.57% year-on-year and 7.3% month-over-month.
+Here is a summary of the provided financial data:
 
-Liquid volumes displayed a different trend, with a 6.33% monthly increase in RUB but a 14.15% annual decrease. In USD terms, liquid volumes saw a substantial 29.18% decline year-on-year and a 4.22% drop from the previous month. The Liquid/Total ratio in USD decreased by 11.95% compared to the previous year and increased by 3.32% from the previous month.
+The total volume in RUB witnessed a slight decrease of 0.71% from 01.01.2024 to 01.01.2025, with a more significant monthly drop of 9.29% from 01.12.2024 to 01.01.2025. In USD terms, the total volume decreased by 12.42% year-over-year and 3.88% month-over-month. 
 
-These figures indicate a mixed performance in the market, with some areas showing growth while others experienced notable declines over the year and month.
+Liquid volume experienced a substantial decline, with a 23.98% year-over-year decrease in RUB and a 32.95% drop in USD. The monthly change in liquid volume was even more pronounced, with a 34.22% decrease in RUB and a 30.3% decrease in USD. 
+
+The Liquid/Total ratio in USD decreased by 23.44% year-over-year and 27.49% month-over-month, indicating a significant shift in the composition of the total volume.
