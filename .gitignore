@@ -15,4 +15,4 @@ RNWF_structure.xlsx
 /cbr_decissions/mlruns
 /cbr_decissions/test.ann
 /cbr_decissions/.env
-/NPV
+/predictions_and_npv/lightning_logs
