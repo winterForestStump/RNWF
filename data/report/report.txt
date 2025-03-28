@@ -1,3 +1,5 @@
-Between February 1, 2024, and February 1, 2025, the total volume in RUB increased by 0.36%, while it decreased by 8.56% in USD. In the same period, the liquid volume decreased by 23.56% in RUB and 30.36% in USD. The liquid-to-total ratio in USD also saw a decline of 23.83% year-over-year. 
+The financial data shows a mixed performance over the given period. In terms of Total Volume in RUB, there has been a slight decrease of 0.71% from February to March 2025, and a more significant decline of 3.08% year-over-year from March 2024 to March 2025. However, when measured in USD, Total Volume has increased by 10.96% month-over-month and 1.53% year-over-year. 
 
-From January 1, 2025, to February 1, 2025, the total volume increased by 0.72% in RUB and 4.5% in USD. However, the liquid volume decreased by 1.54% in RUB and increased by 2.15% in USD during this period, resulting in a 2.25% drop in the liquid/total ratio in USD.
+Liquid Volume, on the other hand, has seen a substantial drop in both RUB and USD over the last year, with a 32.72% decrease in RUB and a 29.52% decrease in USD from March 2024 to March 2025. The month-over-month change also indicates a decline, with a 9.53% drop in RUB and a 1.11% decrease in USD. 
+
+The Liquid/Total ratio in USD has also decreased by 8.88% from February to March 2025 and by 30.58% year-over-year, indicating a shift in the composition of the total volume.
