@@ -4,7 +4,7 @@ The size, structure and data on the dynamics of the fund are provided from the M
 
 The basic regulatory document of the RNWF is [Decree #18 from January 19, 2008](https://www.consultant.ru/document/cons_doc_LAW_74298/92d969e26a4326c5d02fa79b8f9cf4994ee5633b/) of the Government of Russian Federation 'On the Procedure for managing funds of the National Wealth Fund' and '[Requirements to financial assets](https://www.consultant.ru/document/cons_doc_LAW_74298/7bc757f5e7b23b669abc3e59d4b3a56e9a7307ba/) in which resources of the NWF can be placed.
 
-## Data as of February 1, 2025
+## Data as of May 1, 2025
 Since May-June 2024, access to the data of the website of the MinFin became restricted from abroad, access is possible only through VPN (server address - Russia).
 
 ## All tables and plots are available on [russiannationalwelfarefund.streamlit.app](https://russiannationalwelfarefund.streamlit.app/)
@@ -19,7 +19,7 @@ In February 2023, the State Duma removed the thresholds of 7% and 10% for the li
 ## Additional information
 - The USD 1875.4 mln amount in securities of Russian issuers related to the implementation of self-sustaining infrastructure projects with high probability is the **Yamal-LNG** project debt. There were two issues of bonds, which were purchased by the MinFin by closed subscription. Reports on the results of the issue could be found [here](https://disclosure.1prime.ru/portal/default.aspx?emId=7709602713). 
 
-- As on February 1, 2025 other Russian issuers received: 
+- As on the last reporting date 'other Russian issuers' received: 
 1. 49 700 mln RUB. With very high probability the issuer is **FSUE "Mayak Production Association"** (ФГУП «ПО «Маяк», ОГРН 1027401177209, ИНН 7422000795). [Russian Central Bank made following decisions](https://www.cbr.ru/rbr/insideDKO/) on state registration of issues of non-convertible interest-bearing book-entry bonds: 16.11.2023 registration number 4-01-00015-T-001P and 20.05.2024 registration numbers 4-02-00015-T-001P, 4-03-00015-T-001P, 4-04-00015-T-001P, 4-05-00015-T-001P. According to the National Settlement Depository and Cbonds websites: 
     - The outstanding amount of [4-01-00015-T-001P](https://nsddata.ru/en/news/view/1068536) bonds is RUB 11 000 mln.,  date of placement - 12.12.2023, duration - 10 years. In the [MinFin's information report about the results of the fund's resources allocation in December 2023](data_monthly_info_messages/01.01.2024.docx), for the first time in the structure of the allocated funds in the bonds of Russian issuers appear 11,000 million rubles - other Russian issuers;
     - The outstanding amount of [4-02-00015-T-001P](https://cbonds.com/bonds/1669545/) bonds is RUB 5 000 mln., [date of acceptance](https://nsddata.ru/en/news/view/1141006) - 17.06.2024, also number of outstanding securities and date of placement can be found on [Notification on Corporate Action](https://nsddata.ru/en/news/view/1142006) from NSD. In the [MinFin's monthly report for June 2024](data_monthly_info_messages/01.07.2024.pdf) the amount of the funds placed in bonds of "other Russian issuers" is increased by RUB 5 000 mln. (total amount is 16 000 mln RUB);
