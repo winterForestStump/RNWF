@@ -8,7 +8,7 @@ COHERE_API = os.getenv('COHERE_API_KEY')
 cohere_client = cohere.ClientV2(api_key=COHERE_API)
 
 def main():
-    df_str = pd.read_csv('https://raw.githubusercontent.com/winterForestStump/RNWF/main/data/rnwf_structure.csv', delimiter=';')
+    df_str = pd.read_csv('data/rnwf_structure.csv', delimiter=';')
     non_date_columns = ['Data']
     date_columns = [col for col in df_str.columns if col not in non_date_columns]
     date_columns = pd.to_datetime(date_columns, format='%d.%m.%Y')

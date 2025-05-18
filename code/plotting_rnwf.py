@@ -48,11 +48,11 @@ def plot_line_chart(df_structure, text):
     chart.save(txt_path)
 
 def main():
-    df = pd.read_csv('https://raw.githubusercontent.com/winterForestStump/RNWF/main/data/rnwf.csv')
+    df = pd.read_csv('data/rnwf.csv')
     plot_chart_main(df, 'amount_blnUSD:Q', 'Fund amount in USD')
     plot_chart_main(df, 'amount_blnRUB:Q', 'Fund amount in RUB')
 
-    df_structure = clean_df_structure(pd.read_csv('https://raw.githubusercontent.com/winterForestStump/RNWF/main/data/rnwf_structure.csv', 
+    df_structure = clean_df_structure(pd.read_csv('data/rnwf_structure.csv', 
                                                   header=None, sep=';'))
     plot_combined_chart(df_structure)
 
