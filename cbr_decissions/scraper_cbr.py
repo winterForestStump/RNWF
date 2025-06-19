@@ -9,6 +9,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import Select
 import pandas as pd
 from bs4 import BeautifulSoup
+import time
 
 # Set Chrome options for headless mode
 chrome_options = Options()
@@ -55,6 +56,21 @@ def main():
     # Requesting the url
     browser.get('https://www.cbr.ru/rbr/insideDKO/')
     browser.set_script_timeout(10)
+
+    # Handle cookies popup if it appears
+    try:
+        # Wait for cookies popup to appear
+        WebDriverWait(browser, 10).until(
+            EC.visibility_of_element_located((By.CLASS_NAME, "popup-cookies"))
+        )
+        # Click the accept button
+        accept_btn = browser.find_element(By.CLASS_NAME, "popup-cookies_accept-button")
+        accept_btn.click()
+        print("Cookies accepted")
+        # Allow time for popup to close
+        time.sleep(1)
+    except Exception as e:
+        print(f"Cookies handling not required: {e}")
 
     # Interact with datepicker
     filter_button = browser.find_element(By.CLASS_NAME, 'datepicker-filter_button')
@@ -128,7 +144,7 @@ def main():
     
     # Close the browser
     browser.quit()
-    print(f'Browser closed')
+    print('Browser closed')
 
 
 if __name__ == "__main__":

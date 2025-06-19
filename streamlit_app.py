@@ -103,7 +103,7 @@ st.altair_chart(chart_8, use_container_width=True)
 chart_9 = plot_line("Preferred shares of credit organizations, RUB mln")
 st.altair_chart(chart_9, use_container_width=True)
 
-chart_10 = plot_line("Subordinated debt with GAZPROMBANK, RUB mln")
+chart_10 = plot_line("Subordinated debt of the Banks, RUB mln")
 st.altair_chart(chart_10, use_container_width=True)
 
 chart_11 = plot_line("Common stocks, RUB mln")
