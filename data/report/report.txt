@@ -1,12 +1,1 @@
-Here is a summary of the provided financial data:
-
-**RUB (Russian Ruble) Analysis:**
-- Total Volume decreased by 7.93% from 01.06.2024 to 01.06.2025, with a slight monthly decline of 0.81%.
-- Liquid Volume experienced a significant drop of 43.66% year-over-year and 13.76% month-over-month.
-
-**USD (US Dollar) Analysis:**
-- Total Volume increased by 5.15% compared to 01.06.2024, with a positive monthly change of 2.91%.
-- Liquid Volume saw a decrease of 35.65% year-over-year and 10.54% month-over-month.
-
-**Liquid/Total Ratio:**
-- The Liquid/Total ratio in USD decreased by 38.81% from 01.06.2024 to 01.06.2025, with a 13.06% monthly change.
+Between July 2024 and July 2025, the total volume in RUB increased by 3.88%, reaching 13,090,578.9 million, while the total volume in USD saw a significant 13.52% growth, amounting to 166,825.9 million. However, the liquid volume in RUB decreased by 10.33% year-over-year, standing at 4,127,953.1 million, and the USD liquid volume experienced a slight decline of 2.01%, totaling 52,606.5 million. The Liquid/Total ratio in USD decreased by 13.68% over the year, indicating a shift in the composition of the total volume. The recent monthly changes show a notable increase in both total and liquid volumes, with double-digit percentage growth in all categories, except for the Liquid/Total ratio in RUB, which is not provided in the given data.

@@ -4,7 +4,7 @@ The size, structure and data on the dynamics of the fund are provided from the M
 
 The basic regulatory document of the RNWF is [Decree #18 from January 19, 2008](https://www.consultant.ru/document/cons_doc_LAW_74298/92d969e26a4326c5d02fa79b8f9cf4994ee5633b/) of the Government of Russian Federation 'On the Procedure for managing funds of the National Wealth Fund' and '[Requirements to financial assets](https://www.consultant.ru/document/cons_doc_LAW_74298/7bc757f5e7b23b669abc3e59d4b3a56e9a7307ba/) in which resources of the NWF can be placed.
 
-## Data as of June 1, 2025
+## Data as of July 1, 2025
 Since May-June 2024, access to the data of the website of the MinFin became restricted from abroad, access is possible only through VPN (server address - Russia).
 
 ## All tables and plots are available on [russiannationalwelfarefund.streamlit.app](https://russiannationalwelfarefund.streamlit.app/)
@@ -15,6 +15,11 @@ The purpose of the budget rule is to reduce the dependence of the Russian state 
 ## The threshold for the liquid assets - *removed*
 A law to raise the threshold for investment of the fund from 7% to 10% of GDP was written in November 2021, taking into account the likelihood of an energy transition and the uncertainty of future fossil resource consumption. Most investments from the NWF could not be made until its liquid part reached 7% of GDP. As an exception, investments in government securities and shares of Russian companies that are not related to the financing of self-sustaining infrastructure projects. After the level of the fund reaches 7% of GDP, but is not yet close to 10%, these funds can be invested in units of investment funds managed by RDIF (УК «РФПИ») and self-sustaining infrastructure projects in the total amount up to 2.5 trillion rubles, as well as infrastructure projects by decision of the president or the government. All other assets can be invested in only after the liquid part of the NWF exceeds 10%. 
 In February 2023, the State Duma removed the thresholds of 7% and 10% for the liquid assets of the fund. Now, after the abolition of the thresholds, the fund's liquid assets can be invested in any assets even if the liquidity ratio is low and the share . 
+
+## Lack of Transparency
+1. Irregular Upload Schedule: Excel files are not uploaded on a consistent or predictable schedule.
+2. Incomplete Investment Disclosure: Monthly reports do not fully disclose investments, particularly those categorized under "Other Russian Bond Issuers."
+3. Discontinued Data Uploads: Previously shared files, such as those detailing VEB deposit amounts and currency flow data, are no longer being updated or published.
 
 ## Additional information
 - The USD 1875.4 mln amount in securities of Russian issuers related to the implementation of self-sustaining infrastructure projects with high probability is the **Yamal-LNG** project debt. There were two issues of bonds, which were purchased by the MinFin by closed subscription. Reports on the results of the issue could be found [here](https://disclosure.1prime.ru/portal/default.aspx?emId=7709602713). 
