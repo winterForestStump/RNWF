@@ -150,11 +150,3 @@ In the **investment project passport** for the *"Ethane-containing gas processin
 > | ...     | ...              | ...              |  
 > | 2040    | -                | 200              |  
 > | **Total** | **200**        | **200**          |  
-
----
-
-**Electronic text of the document**  
-Prepared by JSC "Kodeks" and verified against:  
-The official internet portal of legal information  
-[www.pravo.gov.ru](http://www.pravo.gov.ru), July 17, 2025,  
-No. 0001202507170033  
