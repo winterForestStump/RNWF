@@ -1,5 +1,5 @@
-As of August 1, 2025, the total volume in RUB reached 13,080,455.4 million, reflecting a 6.54% increase from the previous year and a slight decrease of 0.08% from the previous month. In USD terms, the total volume stood at 159,840.0 million, showcasing a 12.39% growth year-over-year, but a 4.19% decline month-over-month.
+The financial data shows a mixed performance over the given period. Total Volume in RUB has increased by 8.03% year-over-year and by 0.47% month-over-month, while Total Volume in USD has seen a more significant growth of 22.62% year-over-year and 2.35% month-over-month. 
 
-The liquid volume in RUB, on the other hand, experienced a 15.27% drop year-over-year, settling at 3,952,913.1 million as of August 1, 2025, with a monthly decrease of 4.24%. When measured in USD, the liquid volume saw a 10.61% annual decline to 48,303.6 million and an 8.18% drop from the previous month.
+However, Liquid Volume has decreased in both RUB and USD over the year, with a decline of -19.09% and -8.16% respectively. The month-over-month change for Liquid Volume in RUB and USD is -0.64% and 1.22%. The Liquid/Total ratio in USD has also decreased by -25.11% year-over-year and -1.11% month-over-month. 
 
-The ratio of liquid to total volume in USD decreased by 20.47% year-over-year, standing at 0.30 as of August 1, 2025, with a marginal monthly change of -4.17%.
+This analysis highlights the varying trends in volume and liquidity across different currencies over the specified time frames.
