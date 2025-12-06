@@ -1,5 +1,1 @@
-The total trading volume in RUB has increased by 3.73% over the last year, with a minor 0.29% growth in the past month, reaching 13,201,461.1 million RUB as of 01.11.2025. In USD terms, the total volume has seen a substantial 25.06% annual increase and a 3.24% monthly rise, amounting to 163,985.8 million USD. 
-
-Conversely, the liquid volume in RUB has decreased by 23.68% year-on-year and 0.18% month-on-month, standing at 4,157,548.0 million RUB. In USD, the liquid volume has also declined by 7.99% annually, despite a 2.76% monthly increase, totaling 51,644.2 million USD. 
-
-The Liquid/Total ratio in USD has experienced a notable 26.42% drop year-over-year and a 0.47% decrease month-over-month, indicating a shift in the composition of the traded assets.
+Between December 2024 and December 2025, the total volume in RUB increased by 1.24%, reaching 13,259,020.6 million. In USD terms, the total volume saw a significant rise of 39.43% during the same period. However, the liquid volume in RUB decreased by 28.96% year-over-year, and the USD liquid volume experienced a more modest decline of 2.16%. The ratio of liquid to total volume in USD decreased by 29.83% from December 2024 to December 2025.

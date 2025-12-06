@@ -4,7 +4,7 @@ The size, structure and data on the dynamics of the fund are provided from the M
 
 The basic regulatory document of the RNWF is [Decree #18 from January 19, 2008](https://www.consultant.ru/document/cons_doc_LAW_74298/92d969e26a4326c5d02fa79b8f9cf4994ee5633b/) of the Government of Russian Federation 'On the Procedure for managing funds of the National Wealth Fund' and '[Requirements to financial assets](https://www.consultant.ru/document/cons_doc_LAW_74298/7bc757f5e7b23b669abc3e59d4b3a56e9a7307ba/) in which resources of the NWF can be placed.
 
-## Data as of November 1, 2025
+## Data as of December 1, 2025
 Since May-June 2024, access to the data of the website of the MinFin became restricted from abroad, access is possible only through VPN (server address - Russia).
 
 ## All tables and plots are available on [russiannationalwelfarefund.streamlit.app](https://russiannationalwelfarefund.streamlit.app/)
@@ -34,4 +34,4 @@ In February 2023, the State Duma removed the thresholds of 7% and 10% for the li
 The amounts and times are exactly the same as the data from the Ministry of Finance's information reports on the placement of the fund's assets in bonds of other Russian issuers.
 2. and 10 000 mln CNY. The exact company names are unknown 
 
-- As of the November 1, 2025 reporting date, there is a 437,9 million RUB subordinated deposit in VTB Bank and a 177.4 million RUB deposit in VEB Bank for financing an infrastructure project (without specifying which project exactly). According to the program documentation (available in Russian at this [link](https://docs.cntd.ru/document/1313459592#6540IN), with an English translation available here [Ust-Luga_project_program_translation.md](translations/Ust-Luga_projest_program_translation.md)), these mentioned deposits are designated for financing the 'Ethane-containing gas processing complex in the settlement of Ust-Luga' project.
+- As of the December 1, 2025 reporting date, there is a 437,9 million RUB subordinated deposit in VTB Bank and a 177.4 million RUB deposit in VEB Bank for financing an infrastructure project (without specifying which project exactly). According to the program documentation (available in Russian at this [link](https://docs.cntd.ru/document/1313459592#6540IN), with an English translation available here [Ust-Luga_project_program_translation.md](translations/Ust-Luga_projest_program_translation.md)), these mentioned deposits are designated for financing the 'Ethane-containing gas processing complex in the settlement of Ust-Luga' project.
