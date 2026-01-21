@@ -1,17 +1,22 @@
 # mystical bond investments
 
-This is an attempt to identify mysterious bond issuers, whose debt denominated in RUB and CNY currencies has been purchased by the fund since December 2023.
+This is an attempt to identify mysterious bond issuers, whose debt denominated in CNY currencies has been purchased by the fund from July to November 2024:
+* July -      3 000 mln CNY
+* August -    2 750 mln CNY
+* September - 2 000 mln CNY
+* October -   1 250 mln CNY
+* November  - 1 000 mln CNY
+In total - 10 000 mln CNY
 
 The Russian Central Bank provides decisions regarding the registration of financial instruments on the website - https://www.cbr.ru/rbr/insideDKO/.
 
 The idea is to investigate these decisions, identify patterns among the issues for the fund, and eliminate bonds registered for fund investment but undisclosed in the monthly releases.
 
-
+# TO-DO
 ## overal pipeline
 (proposal): 1. cluster texts from decissions; 2. run LLM among the texts regarding bonds registration and get the entities; 3. use entities in internet search
 
 ## LLM's fine-tuning
-
 Dataset for training: https://huggingface.co/datasets/winterForestStump/cbr_bonds_info_detector
 
 Fine-tuned LLM's: [Phi-3-Instruct](https://huggingface.co/winterForestStump/Phi-3.5-instruct-CBR_Bonds_info), [Llama-3.2-3B-Instruct](https://huggingface.co/winterForestStump/Llama-3.2-3B-Instruct-CBR_Bonds_info)

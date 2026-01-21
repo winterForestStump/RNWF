@@ -16,3 +16,4 @@ RNWF_structure.xlsx
 /cbr_decissions/test.ann
 /cbr_decissions/.env
 /predictions_and_npv/lightning_logs
+/fund_income
