@@ -8,7 +8,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import Select
 import pandas as pd
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSouppip
 import time
 
 # Set Chrome options for headless mode
