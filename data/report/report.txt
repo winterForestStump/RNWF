@@ -1,5 +1,5 @@
-Between March 1, 2025, and March 1, 2026, there was a significant increase in total volume, with a 14.04% growth in RUB and a 29.42% increase in USD. However, from February to March 2026, the total volume in RUB and USD experienced slight decreases of 0.66% and 2.64%, respectively.
+Between April 2025 and April 2026, there was a significant increase in both Total and Liquid Volumes in RUB and USD. The Total Volume in RUB increased by 14.15%, while the Liquid Volume rose by 18.97% during this period. Similarly, in USD terms, the Total Volume grew by 17.5%, and the Liquid Volume expanded by 22.47%. 
 
-The liquid volume also saw substantial growth over the year, rising by 18.01% in RUB and 33.92% in USD. Yet, it decreased by 5.24% in RUB and 7.13% in USD from February to March 2026.
+However, comparing March 2026 to April 2026, there was a slight decrease in both Total and Liquid Volumes. The Total Volume in RUB dropped by 1.0%, and the Liquid Volume decreased by 2.89%. In USD, the Total Volume fell by 5.89%, and the Liquid Volume declined by 7.7%. 
 
-The Liquid/Total ratio in USD increased by 3.48% year-over-year but decreased by 4.61% from February to March 2026.
+The Liquid/Total ratio in USD has also seen a minor adjustment, with a 4.22% increase from April 2025 to April 2026 and a 1.91% decrease from March 2026 to April 2026.
