@@ -1,5 +1,3 @@
-The financial data shows a positive trend in total and liquid volumes over the past year, with significant growth in both RUB and USD values. From May 2025 to May 2026, the total volume in RUB increased by 12.05%, and the USD value saw an even more substantial rise of 22.05%. Liquid volumes also experienced growth, with a 9.97% increase in RUB and a 19.78% increase in USD over the same period. 
+The financial data shows a consistent increase in both Total and Liquid Volumes over the last year, with a notable rise in USD values. The Total Volume in RUB increased by 10.76% year-over-year, while the Liquid Volume in RUB saw a significant 20.03% growth. In USD terms, the Total Volume increased by 22.61%, and the Liquid Volume rose by 32.86%. 
 
-However, the data from April to May 2026 indicates a slight decline in total and liquid volumes in RUB, with a -1.5% and -6.78% change, respectively. In contrast, the USD values continued to rise during this period, with a 6.94% increase in total volume and a 1.21% increase in liquid volume. 
-
-The Liquid/Total ratio in USD has decreased by 1.86% year-over-year and by 5.36% from April to May 2026, indicating a slight shift in the composition of the total volume.
+However, comparing the data from the previous month (01.05.2026) to the current month (01.06.2026), there is a slight decrease in both RUB and USD values, with the Total Volume in RUB dropping by 1.95% and the Liquid Volume in USD falling by 0.77%. The Liquid/Total ratio in USD also experienced a decline of 4.01% over the last month.
