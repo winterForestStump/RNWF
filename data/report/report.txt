@@ -1,5 +1,5 @@
-The financial data shows a mixed performance over the given period. The total volume in RUB witnessed a slight decrease of 2.75% year-over-year as of 01.08.2026, with a more significant monthly decline of 2.93%. In USD terms, the total volume saw a marginal increase of 0.34% year-over-year but dropped by 5.48% in the last month. 
+Between September 1, 2025, and September 1, 2026, the total volume in RUB increased by 0.4%, while the total volume in USD decreased by 5.78%. In the same period, the liquid volume in RUB rose by 1.79%, and in USD, it decreased by 4.47%. 
 
-Liquid volume, on the other hand, experienced a notable 6.58% decline in RUB year-over-year and a 2.25% increase in the last month. In USD, it decreased by 4.27% compared to the previous year and 0.45% in the last month. 
+From August 1, 2026, to September 1, 2026, the total volume in RUB increased by 3.73%, and the total volume in USD decreased by 3.23%. The liquid volume saw a significant monthly rise of 8.26% in RUB and 1.0% in USD. 
 
-The Liquid/Total ratio in USD decreased by 3.94% year-over-year but showed a substantial improvement of 5.33% in the last month. This indicates a shift in the composition of the total volume towards a higher proportion of liquid assets in the short term.
+The Liquid/Total ratio in USD increased by 4.37% from August 2026 to September 2026, and by 1.39% year-over-year.
