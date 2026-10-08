@@ -18,3 +18,9 @@ RNWF_structure.xlsx
 /predictions_and_npv/lightning_logs
 /fund_income
 /cbr_decissions/2024_statements
+/data_excel
+/.devcontainer
+/.vscode
+/archive
+/data_fund_volume
+/predictions_and_npv
