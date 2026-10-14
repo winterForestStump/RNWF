@@ -6,9 +6,12 @@ This is an attempt to identify mysterious bond issuers, whose debt denominated i
 * September - 2 000 mln CNY
 * October -   1 250 mln CNY
 * November  - 1 000 mln CNY
-In total - 10 000 mln CNY
+* **In total - 10 000 mln CNY**
 
-The Russian Central Bank provides decisions regarding the registration of financial instruments on the website - https://www.cbr.ru/rbr/insideDKO/.
+There is no one straightforward way to identify the issuer (issuers) of the bonds. Instead we can try to analyze several inderect sources for information of interest extraction.
+
+### Decisions of the Bank of Russia regarding financial instruments analyses
+First, The Russian Central Bank provides decisions regarding the registration of financial instruments on its website - https://www.cbr.ru/rbr/insideDKO/. As the principal securities market supervisor, the Central Bank of Russia (CBR) is legally required by laws (such as the Federal Law on the Central Bank of the Russian Federation and the Federal Law on the Securities Market) to maintain and publish official records regarding the registration, admission, and regulation of financial instruments. Standard corporate bonds issued by Russian joint-stock companies or limited liability companies generally require state registration of the issue (or registration of a bond program) directly with the CBR.
 
 The idea is to investigate these decisions, identify patterns among the issues for the fund, and eliminate bonds registered for fund investment but undisclosed in the monthly releases.
 
