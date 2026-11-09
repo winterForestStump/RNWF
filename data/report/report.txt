@@ -1,5 +1,5 @@
-The financial data presents volume metrics in both RUB and USD for three periods: 01.10.2025, 01.09.2026, and 01.10.2026. There has been a slight decrease in Total Volume in RUB from 13,194.88 million in 01.09.2026 to 12,984.61 million in 01.10.2026, representing a monthly change of -1.59%. In USD terms, the Total Volume decreased by 0.23% month-over-month to 153,794.50 million. 
+The data shows the total and liquid volumes in both RUB and USD for three different periods, along with the corresponding changes. In RUB, the total volume decreased by 1.11% from 01.11.2025 to 01.11.2026, while it increased slightly by 0.54% from the previous month. A similar trend is observed in USD, with a slight decrease of 1.17% over the year and a notable increase of 5.38% in the last month. 
 
-Liquid Volume, however, experienced a more significant decline, dropping by 4.96% in RUB and 3.64% in USD from the previous month. The Liquid/Total ratio in USD also decreased by 3.42% month-over-month, indicating a slight shift in the composition of the total volume. 
+The liquid volumes, however, experienced more significant changes. In RUB, it decreased by nearly 14% year-over-year and by 5.82% in the last month. A similar pattern is seen in USD, with a 13.99% drop over the year and a 1.3% decrease in the last month. The Liquid/Total ratio in USD also decreased by 12.96% year-over-year and 6.33% in the last month. 
 
-Overall, the data suggests a minor contraction in volume over the past month, with a more pronounced decrease in the liquid portion.
+Overall, the data indicates a general decline in liquid volumes and their ratio, while total volumes remain relatively stable with minor fluctuations.
